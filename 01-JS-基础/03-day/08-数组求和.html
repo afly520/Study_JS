@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+// 求数组[2, 6, 1, 7, 4]里面所有元素的和以及平均值
+let arr1 = [2, 6, 1, 7, 4]
+let sum = 0
+let average_value = 0
+for (let i = 0; i < arr1.length; i++) {
+    sum += arr1[i]
+    average_value = sum / arr1.length
+}
+console.log('数组的和是：',sum)
+console.log('数组的平均值是：',average_value)
+</script>
+</body>
+</html>

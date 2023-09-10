@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 页面打印出5行5列的星星
+    /*for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= 5; j++) {
+            document.write('☆')
+        }
+        document.write('<br>')
+    }*/
+
+
+    // 用户输入行数和列数，打印出对应的星星
+    /*let row = parseInt(prompt('请输入行数：'))
+    let col = parseInt(prompt('请输入列数：'))
+    for (let i = 1; i <= row; i++) {
+        for (let j = 1; j <= col; j++) {
+            document.write('☆')
+        }
+        document.write('<br>')
+    }*/
+
+
+
+    // 打印倒三角形星星
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j <= i; j++) {
+            document.write('☆')
+        }
+        document.write('<br>')
+    }
+</script>
+</body>
+</html>

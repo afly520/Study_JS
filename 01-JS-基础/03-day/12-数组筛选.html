@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+        将数组[2,0,6,1,77,52,0,25,7]中大于等于10的元素筛选出来，放入新数组
+    */
+    let arr1 = [2, 0, 6, 1, 77, 52, 0, 25, 7, 10, 33]
+    let arr2 = []
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] >= 10) {
+            arr2.push(arr1[i])
+        }
+    }
+    console.log(arr2)// (5)[77, 52, 25, 10, 33]
+</script>
+</body>
+</html>

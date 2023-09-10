@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*用户输入年份，判断这一年是闰年还是平年，并弹出对应的警示框*/
+    /*能被4整除但不能被100整除，或者被400整除的年份是闰年，否则都是平年*/
+    let year = Number(prompt('请输入年份：'))
+    if (year % 4 === 0 && year % 100 !== 0 || year % 400 === 0) {
+        console.log(`${year}是闰年`)
+    } else {
+        console.log(`${year}是平年`)
+    }
+</script>
+</body>
+</html>

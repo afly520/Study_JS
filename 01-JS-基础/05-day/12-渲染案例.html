@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="12-渲染案例.js"></script>
+    <link rel="stylesheet" href="./12-渲染案例.css">
+</head>
+<body>
+<!-- 4. box核心内容区域开始 -->
+<div class="box w">
+    <div class="box-hd">
+        <h3>精品推荐</h3>
+        <a href="#">查看全部</a>
+    </div>
+    <div class="box-bd">
+        <ul class="clearfix">
+            <script>
+                for (let i = 0; i < data.length; i++) {
+                    console.log(i)
+                    document.write(`
+                        <li>
+                            <a href="#">
+                                <img src=${data[i].src} title="${data[i].title}">
+                                <h4>
+                                    ${data[i].title}
+                                </h4>
+                                <div class="info">
+                                    <span>高级</span> • <span>${data[i].num}</span>人在学习
+                                </div>
+                            </a>
+                        </li>
+                    `)
+                }
+            </script>
+        </ul>
+    </div>
+</div>
+
+</body>
+</html>

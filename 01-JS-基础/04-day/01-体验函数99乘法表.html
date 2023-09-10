@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        span {
+            display: inline-block;
+            width: 100px;
+            padding: 5px 10px;
+            border: 1px solid #4622b0;
+            color: #171ea8;
+            margin: 5px 5px;
+            border-radius: 10px;
+            box-shadow: 2px 2px 2px purple;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<script>
+    function sheet99() {
+        for (let i = 1; i <= 9; i++) {
+            for (let j = 1; j <= i; j++) {
+                document.write(`<span>${j} x ${i} = ${i * j}</span>`)
+            }
+            document.write('<br>')
+        }
+    }
+
+    sheet99()
+    sheet99()
+</script>
+</body>
+</html>

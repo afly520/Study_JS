@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 求n~m的累加和
+    function getSum(n = 0, m = 0) {
+        let sum = 0
+        for (let i = n; i <= m; i++) {
+            sum += i
+        }
+        console.log(sum)
+    }
+
+    /*getSum()
+    getSum(1, 2)*/
+    let num1 = Number(prompt('请输入起始值：'))
+    let num2 = Number(prompt('请输入结束值：'))
+    getSum(num1, num2)
+
+    // div
+</script>
+
+</body>
+</html>

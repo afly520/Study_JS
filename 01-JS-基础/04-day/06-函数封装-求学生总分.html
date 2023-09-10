@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+    * 学生的分数是一个数组，计算每个学生的总分
+    * */
+    // let score = [67, 45, 78, 89, 85, 99, 100]
+
+    function getArrSum(arr = []) {
+        let sum = 0
+        for (let i = 0; i < arr.length; i++) {
+            sum += arr[i]
+        }
+        console.log(sum)
+    }
+
+    getArrSum([67, 45, 78, 89, 85, 99, 100])
+</script>
+</body>
+</html>

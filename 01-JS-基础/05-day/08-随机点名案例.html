@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let arr1 = ['小红', '小蓝', '小黑', '小白', '小灰', '小橙', '小绿']
+    let random = Math.floor(Math.random() * arr1.length)
+    console.log(arr1[random])
+    arr1.splice(random, 1)
+    console.log(arr1)
+
+
+    /* function getRandomName() {
+         let random = Math.floor(Math.random() * arr1.length)
+         return random
+     }
+
+     console.log(getRandomName(arr1[random]))*/
+</script>
+</body>
+</html>

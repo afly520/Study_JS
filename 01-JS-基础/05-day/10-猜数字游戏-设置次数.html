@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 取到n~m的随机整数
+    function getRandom(n, m) {
+        return Math.floor(Math.random() * (m - n + 1)) + n
+    }
+
+    let random = getRandom(1, 20)
+
+    // 设置3次，3次没猜对就直接退出
+    let flag = true// 开关变量
+    for (let i = 1; i <= 3; i++) {
+        let num1 = parseInt(prompt('请输入数字：'))
+        if (num1 > random) {
+            alert('猜大了')
+        } else if (num1 < random) {
+            alert('猜小了')
+        } else {
+            flag = false
+            alert('恭喜你，猜对了')
+            break
+        }
+    }
+    if (flag) {
+        alert('次数已用完')
+    }
+</script>
+</body>
+</html>

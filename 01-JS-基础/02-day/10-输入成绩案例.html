@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+        根据不同的成绩，反馈不同的评价
+            成绩90以上是优秀
+            成绩70~90是良好
+            成绩是60~70之间是及格
+            成绩60以下是不及格
+    */
+
+    let score = Number(prompt('请输入你的分数'))
+    if (score >= 90) {
+        console.log(`成绩是${score},优秀`)
+    } else if (score >= 70) {
+        console.log(`成绩是${score},良好`)
+    } else if (score >= 60) {
+        console.log(`成绩是${score},及格`)
+    } else {
+        console.log(`成绩是${score},不及格`)
+    }
+</script>
+</body>
+</html>

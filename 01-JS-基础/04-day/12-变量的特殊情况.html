@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    function fn1() {
+        // 在函数内部 如果没有定义变量就直接使用变量的话，会把该变量当作全局变量，不推荐
+        num1 = 10
+    }
+
+    fn1()
+    console.log(num1)
+
+
+    function fn2(x, y) {
+        // 形参可以看做是函数的局部变量
+        console.log(x)
+    }
+
+    fn2(1, 2)
+    // console.log(x)
+</script>
+</body>
+</html>

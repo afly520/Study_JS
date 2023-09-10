@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // 将单个新元素添加到数组末尾
+    /*let arr1 = ['小黑', '小红', '小白', '小青', '小蓝', '小绿']
+    console.log(arr1.push('小紫'))
+    console.log(arr1)
+    // 将多个新元素添加到数组末尾
+    arr1.push('小灰', '小橙', '小绿')
+    console.log(arr1)*/
+
+    // 将单个元素或多个元素添加到数组的开头
+    let arr1 = ['小黑', '小红', '小白', '小青', '小蓝', '小绿']
+    arr1.unshift('小灰', '小绿', '小橙')
+    console.log(arr1.unshift('小灰', '小绿', '小橙')) // 12
+    console.log(arr1) // (12)['小灰', '小绿', '小橙', '小灰', '小绿', '小橙', '小黑', '小红', '小白', '小青', '小蓝', '小绿']
+</script>
+</body>
+</html>

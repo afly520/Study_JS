@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    console.log(Boolean('pink'))
+    console.log(Boolean(''))// false
+    console.log(Boolean(0))// false
+    console.log(Boolean(90))
+    console.log(Boolean(-1))
+    console.log(Boolean(undefined))// false
+    console.log(Boolean(null))// false
+    console.log(Boolean(NaN))// false
+    console.log(Boolean(false))// false
+    /*
+        隐式转换
+            有字符串的加法""+1，结果是"1"
+            减法只能用于数字，它会使空字符串转换为0
+            null经过数字转换之后会变为0
+            undefined经过数字转换之后会变为NaN
+    */
+</script>
+</body>
+</html>

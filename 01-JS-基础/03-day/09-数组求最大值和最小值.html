@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let arr1 = [2, 6, 1, 6, 77, 52, 25, 7, 0, 100]
+    let max = arr1[0]
+    let min = arr1[0]
+    for (let i = 0; i < arr1.length; i++) {
+        // 如果max比数组元素小，就需要把元素赋值给max
+        if (max < arr1[i]) {
+            max = arr1[i]
+        }
+        // 如果min比数组元素大，就需要把元素赋值给min
+        if (min > arr1[i]) {
+            min = arr1[i]
+        }
+    }
+    console.log(max)
+    console.log(min)
+</script>
+</body>
+</html>

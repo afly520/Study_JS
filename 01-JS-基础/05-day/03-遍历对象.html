@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // for in不推荐遍历数组
+    /*let arr1 = ['小红', '小黑', '小蓝', '小黄']
+    for (let k in arr1) {
+        console.log(k)// 数组的索引号 字符串类型
+        console.log(arr1[k])
+    }*/
+
+    // for in遍历对象
+    let obj1 = {
+        username: 'alfie',
+        age: 24,
+        gender: 'male'
+    }
+    for (let obj1k in obj1) {
+        console.log(obj1k)
+        console.log(obj1[obj1k])
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /* let Me = {
+         username: '小章大人',
+         age: 24,
+         gender: 'male',
+         homeAddress: '铜陵市郊区周潭镇周潭村',
+         schoolName: '安徽电子信息职业技术学院'
+     }
+     console.log(Me)
+     console.log(Me.homeAddress)
+     Me.age = 30
+     console.log(Me)
+     Me.hobby = ['乒乓球', '羽毛球', '自行车', '走路']
+     console.log(Me)
+     console.log(Me.hobby[3])
+     delete Me.schoolName
+     console.log(Me)*/
+
+    let goods = {
+        'good-Name': '荣耀magic4Pro',
+        goodNum: 1,
+        goodWeight: 0.56,
+        goodAddress: '中国大陆'
+    }
+    // 查询
+    console.log(goods['good-Name'])
+    // 新增
+    goods.goodPrice = 4500
+    console.log(goods)
+    // 修改
+    goods.goodName = '荣耀magic5Pro'
+    console.log(goods)
+    // 删除
+    delete goods.goodWeight
+    console.log(goods)
+    // 查询的另外一种写法
+    console.log(goods['good-Name'])
+</script>
+</body>
+</html>

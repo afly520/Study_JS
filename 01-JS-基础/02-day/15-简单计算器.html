@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+        用户输入俩个数字，然后输入+ — * / 任何一个，可以计算结果
+    */
+    let num1 = Number(prompt('请输入第一个数字'))
+    let operator = (prompt('请输入操作符：'))
+    let num2 = Number(prompt('请输入第二个数字'))
+    switch (operator) {
+        case '+':
+            console.log(num1 + num2)
+            break
+        case '-':
+            console.log(num1 - num2)
+            break
+        case '*':
+            console.log(num1 * num2)
+            break
+        case '/':
+            console.log(num1 / num2)
+            break
+        default:
+            console.log('请输入+ - * /其中一个')
+    }
+</script>
+</body>
+</html>

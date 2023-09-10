@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    /*
+        将数组[2, 0, 6, 1, 77, 52, 0, 25, 7, 10, 33]中的0去掉后形成一个不包含0的新数组
+    */
+    let arr1 = [2, 0, 6, 1, 77, 52, 0, 25, 7, 10, 33, 1, 2, 0, 0, 0]
+    let arr2 = []
+    for (let i = 0; i < arr1.length; i++) {
+        if (arr1[i] !== 0) {
+            arr2.push(arr1[i])
+        }
+    }
+    console.log(arr2) // (11)[2, 6, 1, 77, 52, 25, 7, 10, 33, 1, 2]
+</script>
+</body>
+</html>

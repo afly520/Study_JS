@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let arr1 = ['小黑', '小红', '小白', '小青', '小蓝', '小绿']
+    console.log(arr1)
+
+    // 删除数组中最后一个元素
+    /*console.log(arr1.pop())
+    console.log(arr1)*/
+
+    // 删除数组的第一个元素
+    /*console.log(arr1.shift())
+    console.log(arr1)*/
+
+    //删除数组的中间某位元素
+    // 删除'小红', '小白'
+    console.log(arr1.splice(1,2))
+    console.log(arr1)// (4)['小黑', '小青', '小蓝', '小绿']
+</script>
+</body>
+</html>
