@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<img src="./img/1.webp" alt="" class="img1">
+<script>
+    // 取n~m的随机整数
+    function getRandom(n, m) {
+        return Math.floor(Math.random() * (m - n + 1)) + n
+    }
+
+    // 获取图片对象
+    const img = document.querySelector('.img1')
+    // 随机得到 序号
+    const random = getRandom(1, 6)
+    // 更换路径
+    img.src = `./img/${random}.webp`
+</script>
+</body>
+</html>

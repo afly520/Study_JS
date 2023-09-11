@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 200px;
+            height: 200px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 200px;
+            background-color: blue;
+            font-size: 30px;
+        }
+
+        .active {
+            width: 400px;
+            height: 400px;
+            color: #ff0000;
+            text-align: center;
+            line-height: 400px;
+            background-color: #0ae093;
+            font-size: 40px;
+        }
+    </style>
+</head>
+<body>
+<div class="box">文字</div>
+<script>
+    // 获取元素
+    const box = document.querySelector('.box')
+    // 修改样式 add()类名不加点，并且是字符串
+    // box.classList.add('active')
+
+    // 删除样式 remove()
+    // box.classList.remove('box')
+
+    // 切换类 toggle()  如果有此类名就删掉，没有此类名就加上
+    box.classList.toggle('active')
+</script>
+</body>
+</html>

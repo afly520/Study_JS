@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .wrapper {
+            width: 840px;
+            height: 420px;
+            background: url(./img/bg01.jpg) no-repeat center / cover;
+            padding: 100px 250px;
+            box-sizing: border-box;
+            margin: 10% auto;
+        }
+    </style>
+</head>
+<body>
+<div class="wrapper">
+    <strong>年会抽奖</strong>
+    <h1>一等奖： <span id="one"></span></h1>
+    <h2>一等奖： <span id="two">???</span></h2>
+    <h3>一等奖： <span id="three">???</span></h3>
+</div>
+<script>
+    const personArr = ['小白', '小黄', '小绿', '小黑', '小灰', '小蓝', '小红']
+    // 随机数 一等奖
+    const random1 = Math.floor(Math.random() * personArr.length)
+    console.log(personArr[random1])
+    // 获取id为one的标签元素
+    const one = document.querySelector('#one')
+    // 更新id为one的标签元素里面的内容
+    one.innerHTML = personArr[random1]
+    // 将已选中的数组元素，删掉
+    personArr.splice(random1, 1)
+    console.log(personArr)
+
+    // 随机数 二等奖
+    const random2 = Math.floor(Math.random() * personArr.length)
+    console.log(personArr[random2])
+    // 获取id为one的标签元素
+    const two = document.querySelector('#two')
+    // 更新id为one的标签元素里面的内容
+    two.innerHTML = personArr[random2]
+    // 将已选中的数组元素，删掉
+    personArr.splice(random2, 1)
+    console.log(personArr)
+
+
+    // 随机数 二等奖
+    const random3 = Math.floor(Math.random() * personArr.length)
+    console.log(personArr[random3])
+    // 获取id为one的标签元素
+    const three = document.querySelector('#three')
+    // 更新id为one的标签元素里面的内容
+    three.innerHTML = personArr[random3]
+    // 将已选中的数组元素，删掉
+    personArr.splice(random3, 1)
+    console.log(personArr)
+</script>
+</body>
+</html>

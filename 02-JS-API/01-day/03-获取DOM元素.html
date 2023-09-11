@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<div class="box">111</div>
+<div class="box">222</div>
+<p id="nav">333</p>
+<!--<ul>
+    <li>测试111</li>
+    <li>测试222</li>
+    <li>测试333</li>
+</ul>-->
+<ul class="nav">
+    <li>我的首页</li>
+    <li>产品介绍</li>
+    <li>练习方式</li>
+</ul>
+<script>
+    // 获取匹配的第一个元素
+    // const box = document.querySelector('div')
+    // const box = document.querySelector('.box')
+    // console.log(box)
+
+    /*const nav = document.querySelector('#nav')
+    console.log(nav)*/
+
+    // 获取第一个li
+    /* const li = document.querySelector('ul li:first-child')
+     console.log(li)*/
+
+    // 获取所有的li
+    /*const lis = document.querySelectorAll('ul li')
+    console.log(lis)*/
+
+    // 控制台依次输出li的DOM对象
+    const lis = document.querySelectorAll('.nav li')
+    console.log(lis)
+    for (let i = 0; i < lis.length; i++) {
+        console.log(lis[i])
+    }
+
+    // 就算只有一个元素，通过querySelectorAll获取到的也只是一个伪数组
+    /*const p = document.querySelectorAll('#nav')
+    console.log(p)*/
+
+
+</script>
+</body>
+</html>

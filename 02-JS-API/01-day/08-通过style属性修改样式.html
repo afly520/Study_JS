@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .div1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="div1"></div>
+<script>
+// 获取元素
+const div1 = document.querySelector('.div1')
+// 修改样式属性 对象.style.样式属性='值'
+div1.style.width='400px'
+// 多组单词的采取小驼峰命名法
+div1.style.backgroundColor = 'blue'
+div1.style.border='2px solid red'
+div1.style.borderTop='5px solid red'
+</script>
+</body>
+</html>

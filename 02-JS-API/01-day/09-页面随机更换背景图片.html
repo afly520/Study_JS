@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            background: url("./img/desktop_1.jpg") no-repeat top center/cover;
+        }
+    </style>
+</head>
+<body>
+<script>
+    // 当我们刷新页面，页面中的背景图片随机显示不同的图片
+    console.log(document.body)
+
+    function getRandom(n, m) {
+        return Math.floor(Math.random() * (m - n + 1)) + n
+    }
+
+    const random = getRandom(1, 10)
+    document.body.style.backgroundImage=`url(./img/desktop_${random}.jpg)`
+</script>
+</body>
+</html>
