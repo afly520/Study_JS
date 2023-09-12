@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    // setInterval(函数,间隔时间)
+    /*setInterval(function () {
+        console.log('一秒执行一次')
+    }, 1000)*/
+
+    function fn1() {
+        console.log('一秒执行一次')
+    }
+
+    function fn2() {
+        console.log('俩秒执行一次')
+    }
+
+    // setInterval(函数,间隔时间) 函数名不要加小括号
+    let timer1 = setInterval(fn1, 1000)
+    console.log(timer1)
+    clearInterval(timer1)
+
+    let timer2 = setInterval(fn2, 2000)
+    console.log(timer2)
+    clearInterval(timer2)
+
+    let num1 = 1
+    let timer3 = setInterval(function () {
+        num1++
+        document.write(`${num1}<br>`)
+    }, 1000)
+    clearInterval(timer3)
+</script>
+</body>
+</html>
